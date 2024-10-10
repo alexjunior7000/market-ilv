@@ -320,7 +320,7 @@ async function performSearch() {
       return token_id
     })
 
-    const detailResponses = await axios.post('https://api-market-ilv.vercel.app//api', {tokens_id})
+    const detailResponses = await axios.post('/api', {tokens_id})
       .then(response => {
         return response.data
       })
