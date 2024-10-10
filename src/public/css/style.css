@@ -1,0 +1,13 @@
+/* Estilo personalizado para incluir ícones nas opções */
+select option {
+    padding-left: 20px;
+  }
+  option.icon-globe::before {
+    content: '\1F310'; /* Emoji de globo 🌐 */
+  }
+  option.icon-star::before {
+    content: '\2B50'; /* Emoji de estrela ⭐ */
+  }
+  option.icon-heart::before {
+    content: '\2764'; /* Emoji de coração ❤️ */
+  }

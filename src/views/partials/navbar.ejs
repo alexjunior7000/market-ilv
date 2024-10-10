@@ -1,0 +1,50 @@
+<div class="bg-body-tertiary sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+        <div class="container-fluid">
+            <span class="fs-6 text-white badge text-bg-secondary" id="results-count">illuvials: 0</span>
+            <form class="d-flex" role="search" id="search-form">
+                <input class="form-control form-control-sm me-2" type="search" placeholder="illuvial"
+                    aria-label="Search" id="token-name" value="Rhamphyre">
+                <select class="form-select form-select-sm me-2" id="order-type">
+                    <option value="buy">Activity</option>
+                    <option selected value="sell">Venda (Listados)</option>
+                </select>
+                <input class="form-control form-control-sm me-2" type="search" placeholder="wallet" aria-label="User"
+                    id="user">
+                <button class="btn btn-sm btn-primary" type="submit" id="btnSearch">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-auto">
+                <div class="input-group input-group-sm">
+                    <span class="input-group-text">
+                        <span style="font-size: 14px; font-weight: bold;">F</span>
+                    </span>
+                    <select class="form-select form-select-sm" id="filter-finish">
+                        <option value="all">Todas</option>
+                        <option value="color">Color</option>
+                        <option value="holo">Holo</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row g-1" id="filters-container"></div>
+            </div>
+        </div>
+
+        <!-- Navegação das Abas -->
+        <ul class="nav nav-underline" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link py-2 active" id="tabela-tab" data-bs-toggle="tab" data-bs-target="#tabela" href="#"
+                    role="tab" aria-controls="tabela" aria-selected="true"><i class="bi bi-table"></i> Table</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link py-2" id="grafico-tab" data-bs-toggle="tab" data-bs-target="#grafico" type="button"
+                    href="#" aria-controls="grafico" aria-selected="false"><i class="bi bi-bar-chart"></i> Chart</a>
+            </li>
+        </ul>
+    </div>
+</div>
